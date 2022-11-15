@@ -1,0 +1,116 @@
+/********** ESTILOS PROYECTO **********/
+// Colores blobales del proyecto
+:root {
+  --secondary-color: #8230e9;
+  --info-color: #009dd6;
+}
+
+// Variable de colores
+$primary-color: #3FBEE2;
+$secondary-color: #185564;
+$blue-color: #cff4fc78;
+// $green-color: #138468;
+// $gray-color: #757575;
+
+// Cambiar tema de bootstrap
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "blue": $blue-color,
+  // "green": $green-color,
+  // "gray": $gray-color,
+);
+
+$accordion-icon-active-color: $primary-color;
+$accordion-button-active-color: $primary-color;
+
+@import "~bootstrap/scss/bootstrap";
+@import '@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/********** ESTILOS DE LA PAGINA **********/
+// Fuentes
+// @font-face {
+//   font-family: Bold;
+//   src: url("../src/assets/fonts/Web/WOFF2/._Scotia_W_Bd.woff2") format("woff2"),
+//     /* Super Modern Browsers */ url("../src/assets/fonts/Web/WOFF/._Scotia_W_Bd.woff") format("woff");
+//     /* Pretty Modern Browsers / url("../src/assets/fonts/Desktop/._Scotia_Bd.ttf") format("truetype"); / Safari, Android, iOS */
+//   // url('webfont.eot'), /* IE9 Compat Modes */
+//   // url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//   // url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// body {
+//   font-family: Bold, Light, Regular, Scotia;
+// }
+
+// Estilos scroll
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scrollbar-color: $secondary-color #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.5em #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 1em $secondary-color;
+}
+
+// Estilo de spinner
+.spinner-border:not(.noload) {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  vertical-align: text-bottom;
+  border: 0.7em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+
+/********** ESTILOS DE COMPONENTES **********/
+
+// ***** Estilos Consulta de Pacientes Gestantes *****
+// Bordes de formularios
+.form-control:focus {
+  border-color: $primary-color !important;
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(63 190 226 / 25%) !important;
+}
+
+.form-select:focus {
+  border-color: $primary-color !important;
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(63 190 226 / 25%) !important;
+}
+
+// Estilos de checkbox antes de ser seleccionado
+.form-check-input:checked {
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
+
+// Estilos de acordeones
+.accordion-button:not(.collapsed) {
+  background: $blue-color
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(63, 190, 226, 0.25);
+}
+
+.btn-primary,
+.btn:hover {
+  color: white;
+}
