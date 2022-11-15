@@ -4,4 +4,4 @@
 README.md
 #manejo de enviroments
 # se evita el guardado de las direcciones de las url de los servicios
-/invima/apps/tramites/src/environments/environment.ts
+/src/environments/environment.ts
