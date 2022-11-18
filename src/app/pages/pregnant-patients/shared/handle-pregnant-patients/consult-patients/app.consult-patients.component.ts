@@ -1,7 +1,7 @@
-import { PregnantPatientsService } from '../../../services/pregnant-patients/pregnant-patients.service';
 import { Component, OnInit } from '@angular/core';
 import { combineLatest, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { PregnantPatientsService } from './../../../../../services/pregnant-patients/pregnant-patients.service';
 
 
 @Component({
